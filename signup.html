@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="mainwebsite" href="new.html">
+    <link rel="stylesheet" href="login.css">
+    
+    
+</head>
+<body>
+   <div class="container">
+    <div class="login_box">
+        <h2>Sign Up</h2>
+        <form action="nya.php" method="post">
+            <div class="input_box">
+                <input id="name" type="Name"  name="name" required>
+                <label>Name </label>
+            </div>
+            <div class="input_box">
+                <input id="number" type="text" maxlength="10"  name="number" required>
+                <label>Contact No.</label>
+            </div>
+            <div class="input_box">
+                <input id="password" class="password" type="password"  name="password" required>
+                <label>Create Password </label>
+            </div>
+            <div class="input_box">
+                <input id="confirmpassword" class="confirmpassword" type="password"   name="confirmpassword" required>
+                <label>Confirm Password</label>
+            </div>
+            
+            <button type="submit" class="btn">Sign Up</button>
+            <div class="signup-link">
+                Already have an account? 
+                <a href="index.html">Log in</a><br>
+                
+            </div>
+        </form>
+    </div>
+   </div>
+    <script>
+        document.querySelector('.btn').onclick = function(){ 
+        var password = document.querySelector('.password').value,
+        confirmpassword = document.querySelector('.confirmpassword').value;
+        
+            if(password != confirmpassword){
+                alert("Password do not match");
+                return false
+            }
+          
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>

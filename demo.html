@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     body{
+        align-items: center;
+        background-color: aquamarine;
+        display: flex;
+        justify-content:center;
+        height: 100vh;
+     }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label >username</label>
+        <input type="text">   
+        <label >password</label>
+        <input type="password" class="password"> 
+        <label >confirmpassword</label>
+        <input class="confirmpassword" type="password">   
+        <button type="submit" class="btn">chalo ho gya</button>  
+            
+        
+    </form>
+    <script>
+        document.querySelector('.btn').onclick = function(){ 
+        var password = document.querySelector('.password').value,
+        confirmpassword = document.querySelector('.confirmpassword').value;
+        
+            if(password != confirmpassword){
+                alert("Password do not match");
+                return false
+            }
+            else{
+            (password == confirmpassword)
+                alert("Password matched");
+            }
+            return true
+        }
+        
+        
+
+
+    </script>
+</body>
+</html>

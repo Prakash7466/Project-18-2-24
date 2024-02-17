@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+}
+
+
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo
+{
+    position: relative;
+    color: #ff5e8e;
+    display: inline-block;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 800;
+
+
+}
+
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+
+{
+    list-style: none;
+
+}
+header ul li a 
+{
+    display: inline-block;
+    color: #0169b2;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 8px 18px;
+    text-decoration: none;
+    user-select: none;
+
+}
+header ul li a.active,
+header ul li a:hover
+{
+    background: #0169b2;
+    color: #fff;
+    border-radius: 30px;
+}
+.content{
+    position: relative;
+}
+.content .textbox
+{
+    position: relative;
+    max-width: 550px;
+    
+}
+.content .textbox h4
+{
+    color: #0169b2;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.content .textbox p
+{
+font-size: 1.2em;
+color: #333;
+
+}
+.content .textbox a
+{
+display: inline-block;
+margin-top: 20px;
+padding: 15px 30px;
+background: #ff5e8e;
+color: #fff;
+font-size: 1.2em;
+border-radius: 40px;
+font-weight: 700;
+letter-spacing: 1px;
+text-decoration: none;
+
+}
+.sci
+{
+position:absolute;
+bottom: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+position: relative;
+display: inline-block;
+margin-right: 15px;
+width: 5px;
+height: 5px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding:25px;
+transition: 0.2s ease-in-out;
+}
+.sci li a img
+{
+    filter: invert(1);
+    transform: scale(0.5);
+
+}
+.sci li a:hover
+{
+    /* background: #ff5eff; */
+    transform: translateY(-10px);
+}
+section img
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 700px;
+   
+}
+
+
+
+
+.container {
+    position: relative;
+    width: 40%;
+ 
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    left: 160%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+   
+  }
+
+
+
+
+  footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white ;
+    background-color: black;
+    
+    
+}
+.fomain{
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* border: 1px solid black; */
+}
+.focon{
+    height: 350px;
+    flex-basis: 35%;
+    margin-top: 70px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* border: 1px solid white; */
+}
+
+.focon p{
+    font-size: 16px;
+    margin-top: 25px;
+    line-height: 20px;
+    padding-left: 10px;
+    color: gainsboro;
+}
+.focon h1{
+    font-size: 22px;
+    padding: 10px;
+}
+
+
+form input{
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    color: rgb(248, 106, 54) ;
+    background-color: transparent;
+    border: 1px solid gainsboro;
+}
+form button{
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 5px;
+    border: 1px solid rgb(248, 106, 54) ;
+    background-color: rgb(248, 106, 54);
+    color: white;
+
+}
